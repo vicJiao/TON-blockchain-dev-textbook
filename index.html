@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TON 区块链开发教材：从架构、智能合约到 DApp 实战的系统学习路径。">
+  <title>TON 区块链开发教材</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">正在加载教材...</div>
+  <script>
+    window.$docsify = {
+      name: 'TON 区块链开发教材',
+      repo: 'https://github.com/vicJiao/TON-blockchain-dev-textbook',
+      homepage: 'TON区块链开发教材-README.md',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      search: {
+        placeholder: '搜索教材内容',
+        noData: '没有找到相关内容',
+        depth: 4
+      },
+      copyCode: { buttonText: '复制代码', successText: '已复制' },
+      pagination: { previousText: '上一页', nextText: '下一页' },
+      plugins: [function (hook) {
+        hook.beforeEach(function (content) {
+          return content;
+        });
+      }]
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@3/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+</body>
+</html>
